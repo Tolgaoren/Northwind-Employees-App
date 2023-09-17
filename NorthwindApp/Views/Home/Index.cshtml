@@ -1,0 +1,26 @@
+﻿@model IEnumerable<NorthwindApp.Model.Employee>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">First Name</th>
+            <th scope ="col">Last Name</th>
+            <th scope="col">Title</th>
+            <th scope="col">Orders</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@employee.FirstName</td>
+                <td>@employee.LastName</td>
+                <td>@employee.Title</td>
+                <td><a href="@Url.Action("Orders", "Home", new { id = employee.EmployeeId })">Orders</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

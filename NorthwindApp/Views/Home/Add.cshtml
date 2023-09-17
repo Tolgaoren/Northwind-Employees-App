@@ -1,0 +1,76 @@
+﻿@model NorthwindApp.Model.Employee
+
+<form asp-action="Add" method="post">
+    
+    <div class ="form-group">
+        <label for="LastName">Last Name:</label>
+        <input asp-for="LastName" maxlength="20" />
+    </div>
+    <div class="form-group">
+        <label for="FirstName">First Name:</label>
+        <input asp-for="FirstName" maxlength="10" />
+    </div>
+    <div class="form-group">
+        <label for="Title">Title:</label>
+        <input asp-for="Title" maxlength="30" />
+    </div>
+    <div class="form-group">
+        <label for="TitleOfCourtesy">Title Of Courtesy:</label>
+        <input asp-for="TitleOfCourtesy" maxlength="25" />
+    </div>
+    <div class="form-group">
+        <label for="BirthDate">Birth Date:</label>
+        <input asp-for="BirthDate" />
+    </div>
+    <div class="form-group">
+        <label for="HireDate">Hire Date:</label>
+        <input asp-for="HireDate" />
+    </div>
+    <div class="form-group">
+        <label for="Address">Address:</label>
+        <input asp-for="Address" maxlength="60" />
+    </div>
+    <div class="form-group">
+        <label for="City">City:</label>
+        <input asp-for="City" maxlength="15" />
+    </div>
+    <div class="form-group">
+        <label for="Region">Region:</label>
+        <input asp-for="Region" maxlength="15" />
+    </div>
+    <div class="form-group">
+        <label for="PostalCode">Postal Code:</label>
+        <input asp-for="PostalCode" maxlength="15" />
+    </div>
+    <div class="form-group">
+        <label for="Country">Country:</label>
+        <input asp-for="Country" maxlength="15" />
+    </div>
+    <div class="form-group">
+        <label for="HomePhone">Home Phone:</label>
+        <input asp-for="HomePhone" maxlength="24" />
+    </div>
+    <div class="form-group">
+        <label for="Extension">Extension:</label>
+        <input asp-for="Extension" maxlength="4" />
+    </div>
+    <div class="form-group">
+        <label for="Photo">Photo:</label>
+        <input asp-for="Photo" />
+    </div>
+    <div class="form-group">
+        <label for="Notes">Notes:</label>
+        <input asp-for="Notes" />
+    </div>
+    <div class="form-group">
+        <label for="ReportsTo">Reports To:</label>
+        <input asp-for="ReportsTo" />
+    </div>
+    <div class="form-group">
+        <label for="PhotoPath">Photo Path:</label>
+        <input asp-for="PhotoPath" maxlength="255" />
+    </div>
+    <div class="form-group">
+        <button>Kaydet</button>
+    </div>
+</form>
